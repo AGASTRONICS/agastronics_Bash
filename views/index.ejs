@@ -1,0 +1,34 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+<!-- Main Site -->
+<center>
+    
+    <div id="alert">
+        <span class="closebtn" id="txnid" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+    <main id="site-main">
+        <section class="card">
+            <p>Select your choice to vote</p>
+            <div id="votes">
+                <label class="container">Red
+                    <input required style="width: 2em;  height: 2em;" class='radio' type="radio" name="decision" value="red">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Blue
+                    <input required style="width: 2em;  height: 2em;" class='radio' type="radio" name="decision" value="blue">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input value="Button" type="submit" onclick="Vote()">
+        </section>
+    </main>
+    <!-- /Main Site -->
+</center>
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
